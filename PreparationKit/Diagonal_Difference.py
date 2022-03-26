@@ -21,9 +21,7 @@ def diagonalDifference(arr):
     right = 0
     for i in range(n):
         left += arr[i][i]
-    for j in range(n):
-        right += arr[j][n-j-1]
-    
+        right += arr[i][n-i-1]
     return abs(left - right)
     
 
